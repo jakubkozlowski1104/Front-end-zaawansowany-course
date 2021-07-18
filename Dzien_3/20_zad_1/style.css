@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.picture {
+    position: relative;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 8vh;
+    width: 1920px;
+    height: 1080px;
+    background-color: blue;
+    overflow: hidden;
+}
+.img {
+    position: absolute;
+    background-repeat: no-repeat;
+    }
+
+.img1 {
+    left: 120px;
+    top: 100px;
+}
+.img2 {
+    top: 260px;
+}
+.img3 {
+   top: 400px;
+}
+.img4 {
+   top: 330px;
+}
+.img5 {
+   top: 450px;
+}
+.img6 {
+   top: 713px;
+}
+.img7 {
+   top: 50px;
+   left: 150px;
+}
+.img8 {
+   top: 120px;
+   left: -90px;
+}
+.img9 {
+   top: 50px;
+   right: -10px;
+}
+.img10 {
+    right: 0;
+    top: 197px;
+}
+.img11 {
+   bottom: 160px;
+   left: 150px;
+}
