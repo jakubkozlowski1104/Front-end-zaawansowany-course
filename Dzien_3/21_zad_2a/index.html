@@ -26,11 +26,13 @@ Tekst ma być pod szachownicą.
         }
         
         .board {
+            box-sizing: border-box;
+            position: absolute;
+            top: calc(50% - 30vw/2);
+            left: calc(50% - 30vw/2);
             width: 30vw;
             height: 30vw;
-            border: 10px solid black;
-            margin: 0 auto;
-            margin-top: 32vh;
+            border: 10px black solid;
             font-size: 0;
         }
 
@@ -38,7 +40,7 @@ Tekst ma być pod szachownicą.
             display: inline-block;
             height: 50%;
             width: 50%;
-            background-color: white;
+            background-color: red;
             font-size: 0;
         }
 
@@ -46,10 +48,16 @@ Tekst ma być pod szachownicą.
             display: inline-block;
             height: 50%;
             width: 50%;
-            background-color: red;
+            background-color: white;
         }
 
         span:nth-child(3){
+            display: inline-block;
+            height: 50%;
+            width: 50%;
+            background-color: white;
+        }
+        span:nth-child(4){
             display: inline-block;
             height: 50%;
             width: 50%;
