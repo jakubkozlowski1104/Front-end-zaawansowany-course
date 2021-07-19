@@ -16,11 +16,39 @@ Tekst ma być pod szachownicą. Właściwość position h1 musi być static.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Szachownica Float</title>
-    <style></style>
+    <style>
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+            
+        }
+
+        .board {
+            width: 30vw;
+            margin: 0 auto;
+            border: 10px black solid
+        }
+        
+        span {
+            float: left;
+            width: 50%;
+            height: 15vw;
+            background-color: red;
+        }
+
+        span:nth-child(2) {
+            background-color: white;
+        }
+        span:nth-child(3) {
+            background-color: white;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="board">
+    <div class="board clearfix">
         <span></span>
         <span></span>
         <span></span>
