@@ -10,12 +10,11 @@
     overflow: hidden;
 }
 nav, header {
-    height: 300px;
+    height: 360px;
 }
 nav {
     float: left;
     width: 300px;
-    background-color: red;
 }
 
 nav ul {
@@ -24,7 +23,23 @@ nav ul {
 
 nav a {
     display: block;
-    background-color:chartreuse;
+    line-height: 72px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    font-family: arial;
+    padding: 0 5px 0 20px;
+}
+
+nav i {
+    width: 50px;
+    border-right: 2px solid black;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover i {
+    margin-right: 50px;
 }
 header {
     float: left;
@@ -32,7 +47,6 @@ header {
     background-color: aquamarine;
     background-image: url("pianino.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
 }
 
