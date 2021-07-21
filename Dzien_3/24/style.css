@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    min-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+nav, header {
+    height: 300px;
+}
+nav {
+    float: left;
+    width: 300px;
+    background-color: red;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    background-color:chartreuse;
+}
+header {
+    float: left;
+    width: calc(100% - 300px);
+    background-color: aquamarine;
+    background-image: url("pianino.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    font-family: arial;
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 15px 0;
+}
