@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body button {
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: 30px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+
+}
