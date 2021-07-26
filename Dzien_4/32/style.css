@@ -17,11 +17,75 @@ body span:hover{
 body div {
     position: absolute;
 }
-.timber {
+div {
+    top: 100%;
+    left: 0;
+}
+
+.timber, .roof{
+    transition: 1s;
+}
+
+.door {
+    transition: 1.4s;
+}
+.window1{
+    transition: 1.5s;
+}
+.window2{
+    transition: 2s;
+}
+.chimney{
+    transition: 2.5s;
+}
+span:hover+.timber {
     background-color: rgb(177, 0, 0);
-    top: 50%;
-    left: 50%;
+    top: 356px;
+    left: 393.2px;
     width: 400px;
     height: 250px;
     transform: translate(-50%, -50%);
+}
+
+span:hover~.door {
+    background-color: rgb(59, 6, 6);
+    width: 65px;
+    height: 105px;
+    top: 376px;
+    left: 360px;
+}
+
+span:hover~.window1{
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    top: 280px;
+    left: 270px;
+}
+
+span:hover~.window2{
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    top: 280px;
+    left: 450px;
+}
+
+span:hover~.roof {
+    background-color: black;
+    width: 283px;
+    height: 283px;
+    transform: rotate(45deg);
+    left: 252px;
+    top: 90px;
+    z-index: -1;
+}
+
+span:hover~.chimney{
+    background-color: gray;
+    left: 460px;
+    top: 60px;
+    width: 50px;
+    height: 100px;
+    z-index: -2;
 }
