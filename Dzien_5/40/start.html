@@ -22,7 +22,7 @@
             border: 0 solid black;
         }
 
-        /* .larger:hover~h1 {
+        h1.duzy {
             font-size: 160px;
         } */
 
@@ -30,8 +30,9 @@
             font-size: 40px;
         }
 
-        .border:hover~h1 {
-            border: 20px solid black;
+       
+
+   
         }
     </style>
 </head>
@@ -53,7 +54,7 @@
 
     <script>
         $(".larger").click(function(){
-            $('h1').addClass("duzy-")
+            $('h1').toggleClass("duzy")
         })
     </script>
 </body>
