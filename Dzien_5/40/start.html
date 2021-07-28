@@ -22,9 +22,9 @@
             border: 0 solid black;
         }
 
-        .larger:hover~h1 {
+        /* .larger:hover~h1 {
             font-size: 160px;
-        }
+        } */
 
         .smaller:hover~h1 {
             font-size: 40px;
@@ -45,6 +45,17 @@
     <h1>Nazwa</h1>
 
 
+    
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(".larger").click(function(){
+            $('h1').addClass("duzy-")
+        })
+    </script>
 </body>
 
 </html>
