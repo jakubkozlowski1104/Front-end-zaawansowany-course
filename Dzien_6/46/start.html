@@ -25,19 +25,35 @@
    font-family: roboto condensed;
    overflow: hidden;
    cursor: pointer;
+
   }
 
   button span {
-   display: block;
-   line-height: 100px;
-   position: relative;
-   top: 0;
-   transition: .2s linear;
+      display: block;
+      position: relative;
+      transition: .3s;
+
   }
 
-  button:hover span {
-   top: -100px;
+  button:hover span{
+      transform: translateX(-350px);
   }
+
+  button span:nth-child(1) {
+      line-height: 100px;
+      top: 0;
+      left: 0;
+  }
+
+  button span:nth-child(2) {
+    display: block;
+    left: 350px;
+    bottom: 76px;
+  }
+
+
+  
+
  </style>
 </head>
 
