@@ -13,6 +13,7 @@
     border-width: 0;
     background-color: blue;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .arrow i {
@@ -21,17 +22,18 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(180deg);
     font-size: 30px;
-    color: black;
+    color: white;
     animation: arrowMove 1.5s linear both infinite;
+    text-shadow: 0 13px, 0 -13px;
 
 }
 
 @keyframes arrowMove{
     0%{
-        top: 120%;
+        top: 160%;
     }
     100% {
-        top: -20%;
+        top: -50%;
     }
 }
 
