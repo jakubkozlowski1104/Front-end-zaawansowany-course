@@ -19,7 +19,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(180deg);
     font-size: 30px;
     color: black;
     animation: arrowMove 1.5s linear both infinite;
@@ -28,10 +28,10 @@
 
 @keyframes arrowMove{
     0%{
-        top: -20%;
+        top: 120%;
     }
     100% {
-        top: 120%;
+        top: -20%;
     }
 }
 
