@@ -82,7 +82,7 @@ html {
     font-family: sans-serif;
     color: black;
     transform: scale(0);
-    /* Utwórz animację, któa pokaże wynik po zakończeniu gry */
+    animation: showResult .5s 5s linear both;
    }
  
  
@@ -142,7 +142,7 @@ html {
         right: var(--paddleFromEdge);
     }
     20%{
-        top: 0;
+        top: 70%;
     }
     40%{
         top: 30%;
@@ -160,8 +160,11 @@ html {
    
  
    @keyframes showResult {
+       0% {
+           transform: scale(0);
+       }
        100% {
-        transform: scale(1);
+            transform: scale(1);
        }
 
    }
