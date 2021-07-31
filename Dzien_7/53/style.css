@@ -36,12 +36,13 @@ html {
    .ball {
     width: var(--ballSize);
     height: var(--ballSize);
-    top: calc(50% - var(--ballSize)/2);
-    left: calc(50% - var(--ballSize)/2);
+
+    /* top: calc(50% - var(--ballSize)/2); */
+    /* left: calc(50% - var(--ballSize)/2); */
     background-color: var(--ballColor);
     border-radius: 50%;
  
-    /* Stwórz animację ballMove */
+    /* animation: ballMove var(--animationTime) linear both; */
     animation: ballMove var(--animationTime) linear both;
  
    }
@@ -79,36 +80,88 @@ html {
     text-transform: uppercase;
     text-align: center;
     font-family: sans-serif;
- 
     color: black;
     transform: scale(0);
     /* Utwórz animację, któa pokaże wynik po zakończeniu gry */
-    animation: showResult 1s calc(var(--animationTime) + 1s) both;
    }
  
  
    @keyframes ballMove {
- 
-    /* left: 75px - lewa */
-    /* left: 605px - prawa */
-    /* top: 0 - góra */
-    /* top: 380px - góra */
-    /* left: 340px - środek */
-    /* do pokonania 530px (między rakietkami) na 40% czyli 13px na 1% - prędkość piłki*/
-    /* 0% {
-         top: calc(50% - var(--ballSize)/2);
-         left: calc(50% - var(--ballSize)/2);
-       } */
-    20% {
-     top: 340px;
-     /* left: calc(var(--tableWidth) - var(--paddleFromEdge) - var(--paddleWidth) - var(--ballSize)); */
-     left: 605px;
+        0%{
+            top: 50%;
+            left: 50%;
+        }
+        20%{
+            top: 75%;
+            left: 86%;
+        }
+        40%{
+            top: 95%;
+            left: 55%;
+        }
+        60%{
+            top: 30%;
+            left: 12%;
+        }
+        80%{
+            top: 0;
+            left: 60%;
+        }
+        100%{
+            top: 14%;
+            left: 100%;
+        }
     }
  
+ 
+   @keyframes playerPaddle {
+    0%{
+        top: calc(50% - var(--paddleHeight)/2);
+        left: var(--paddleFromEdge);
+    }
+    20%{
+        top: 80%;
+    }
+    40%{
+        top: 50%;
+    }
+    60%{
+       top: 20%;
+    }
+    80%{
+        top: 0;
+    }
+    100%{
+        top: 30%;
+    }
    }
  
-   @keyframes playerPaddle {}
+   @keyframes aiPaddle {
+    0%{
+        top: calc(50% - var(--paddleHeight)/2);
+        right: var(--paddleFromEdge);
+    }
+    20%{
+        top: 0;
+    }
+    40%{
+        top: 30%;
+    }
+    60%{
+       top: 70%;
+    }
+    80%{
+        top: 40%;
+    }
+    100%{
+        top: 15%;
+    }
+   }
+   
  
-   @keyframes aiPaddle {}
- 
-   @keyframes showResult {}
+   @keyframes showResult {
+       100% {
+        transform: scale(1);
+       }
+
+   }
