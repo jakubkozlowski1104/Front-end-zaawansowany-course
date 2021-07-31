@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    position: fixed;
+    top: 85%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border-width: 0;
+    background-color: blue;
+    overflow: hidden;
+}
+
+.arrow i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: black;
+    animation: arrowMove 1.5s linear both infinite;
+
+}
+
+@keyframes arrowMove{
+    0%{
+        top: -20%;
+    }
+    100% {
+        top: 120%;
+    }
+}
+
