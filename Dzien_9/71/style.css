@@ -34,5 +34,19 @@ section {
 }
 
 .col img {
-    width: 100%;
+    width: 80%;
+    align-self: center;
+}
+
+.col p.price {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.col p.price span {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 0;
 }
