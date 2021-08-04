@@ -1,14 +1,25 @@
 
-const btnIncrease = document.querySelector('bigger');
-const btnDecrease = document.querySelector('smaller');
+const btnIncrease = document.querySelector('.bigger');
+const btnDecrease = document.querySelector('.smaller');
 const text = document.querySelector('p');
 
-let textSize = 16;
+
+
+let textSize = 20; 
+text.style.fontSize = textSize + "px";
+
 
 
 function textIncrease() {
-    text.style.fontSize = "30px";
+ textSize++;
+ text.style.fontSize = textSize + "px";
+}
+
+function textDecrease() {
+ textSize--;
+ text.style.fontSize = textSize + "px";
 }
 
 
 btnIncrease.addEventListener('click', textIncrease);
+btnDecrease.addEventListener('click', textDecrease);
