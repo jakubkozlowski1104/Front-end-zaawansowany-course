@@ -6,9 +6,13 @@
 
   //Bonus dodaj właściwość transition dla div określoną na .5s.
 
-const btnRotate = document.querySelector('button');
-let square = document.querySelector('div');
+const btn = document.querySelector('button');
+const div = document.querySelector('div');
 
 let rotate = 0;
-let deg = 0
+let deg = 80;
 
+btn.addEventListener('click', function() {
+  deg += 10;
+  div.style.transform = 'rotate('+deg+'deg)';
+});
