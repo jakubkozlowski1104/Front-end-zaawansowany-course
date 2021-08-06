@@ -11,4 +11,11 @@ $('.interface').on('click', function() {
             "font-size": "+=2px"
         }, 500);
     }
+
+    if ($(this).hasClass("move")) {
+        $('.text').animate({
+            "left": "+=10px",
+            "letter-spacing" : "+=1px"
+        }, 200);
+    }
 })
