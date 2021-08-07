@@ -14,8 +14,6 @@
 
 .burger:hover {
     cursor: pointer;
-    transform: rotate(405deg);
-    transition: .3s linear;
 }
 
 aside {
@@ -26,8 +24,4 @@ aside {
     width: 300px;
     background-color: black;
     transition: .5s ;
-}
-
-.burger:hover + aside{
-    left: 0;
 }
