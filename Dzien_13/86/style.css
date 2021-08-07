@@ -25,9 +25,9 @@ aside {
     left: -300px;
     width: 300px;
     background-color: black;
-    transition: .5s;
+    transition: .5s ;
 }
 
-.burger:hover~aside{
+.burger:hover + aside{
     left: 0;
 }
