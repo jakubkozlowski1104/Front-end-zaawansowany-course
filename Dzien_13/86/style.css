@@ -10,10 +10,15 @@
     text-align: center;
     line-height: 50px;
     border: 2px solid black;
+    transition: 0.5s ;
 }
 
 .burger:hover {
     cursor: pointer;
+}
+
+.burger.active {
+    transform: rotate(405deg);
 }
 
 aside {
@@ -24,4 +29,8 @@ aside {
     width: 300px;
     background-color: black;
     transition: .5s ;
+}
+
+.burger.active + aside {
+    left: 0;
 }
